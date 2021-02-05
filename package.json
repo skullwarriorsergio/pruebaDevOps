@@ -10,6 +10,7 @@
     "@types/node": "^14.14.25",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
+    "husky": "^4.3.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
@@ -21,8 +22,16 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	 "tslint-check": "tslint-config-prettier-check ./tslint.json",
-	 "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
   },
   "eslintConfig": {
     "extends": [
