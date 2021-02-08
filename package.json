@@ -62,7 +62,7 @@
     "tslint-react": "^5.0.0"
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/*.js": [
       "prettier --write .",
       "yarn lint",
       "yarn react-scripts test --watchAll=false"
